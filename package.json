@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "description": "Ecommerce mern full stack app",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js"
+    "start": "node index.js"
   },
   "keywords": [
     "mern",

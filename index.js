@@ -19,12 +19,12 @@ mongoose.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: 
 
 
 // api routes
-const productRoutes = require('./routes/product');
-const userRoutes = require('./routes/user');
-const orderRoutes = require('./routes/order');
-app.use('/api/', productRoutes);
-app.use('/api/', userRoutes);
-app.use('/api/', orderRoutes);
+const productRoutes = require('./routes/product.js');
+const userRoutes = require('./routes/user.js');
+const orderRoutes = require('./routes/order.js');
+app.use('/api', productRoutes);
+app.use('/api', userRoutes);
+app.use('/api', orderRoutes);
 //greeting routes
 app.get('/', (req, res) => {
     res.send('<h1>Wellcome to my Mern E-commerce App</h1>');
